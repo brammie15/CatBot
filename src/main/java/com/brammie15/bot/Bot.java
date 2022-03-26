@@ -11,6 +11,9 @@ public class Bot {
         }
         JDA api = JDABuilder.createDefault(args[0]).build();
         api.addEventListener(new CatListener());
+
+//        api.addEventListener(new dmListener());
+        api.addEventListener(new CommandSex());
     }
 }
 
