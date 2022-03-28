@@ -1,7 +1,9 @@
 package com.brammie15.bot;
 
 import com.brammie15.bot.commands.CatCommand;
+import com.brammie15.bot.commands.Listners.SadListner;
 import com.brammie15.bot.commands.PingCommand;
+import com.brammie15.bot.commands.SendCommand;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.ChannelType;
 import net.dv8tion.jda.api.entities.User;
@@ -14,10 +16,14 @@ import java.util.Set;
 
 public class CommandSex extends ListenerAdapter {
     public static final Set<Command> COMMANDS = new HashSet<>();
+    public static final Set<MessageListener> LISTNERS = new HashSet<>();
 
     public CommandSex() {
         COMMANDS.add(new PingCommand());
         COMMANDS.add(new CatCommand());
+        COMMANDS.add(new SendCommand());
+
+        LISTNERS.add(new SadListner());
     }
 
     @Override
@@ -26,6 +32,16 @@ public class CommandSex extends ListenerAdapter {
         StoreRecievedDm(event);
         System.out.println("(" + event.getMessage().getTimeCreated() + ") " + event.getAuthor().getName() +": "+event.getMessage().getContentDisplay());
         String content = event.getMessage().getContentRaw().trim().toLowerCase();
+
+        LISTNERS.forEach(command -> {
+            for (String s : command.getList()) {
+                if(content.contains(s)){
+                    command.run(event);
+                    return;
+                }
+            }
+        });
+
         COMMANDS.forEach(command -> {
             if(content.startsWith(command.getName().toLowerCase())) {
                 command.run(event);
