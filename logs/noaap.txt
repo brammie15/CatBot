@@ -77,3 +77,25 @@ noaap: !cat
 noaap: no
 noaap: they are getting fucked by puttin that's true
 noaap: but your penis isn't big enough
+noaap: ello bram ly
+CatBot: Hello world!
+noaap: ssst
+noaap: sex?
+CatBot: no pls i am only 6
+noaap: i'm 25 what's the problem
+noaap: i don't see a problem
+noaap: hey babe
+noaap: ly
+noaap: !cat
+noaap: !send 535145705698885633 "Before I say anything, I must let you know our relationship has been the most important to me, and I respect and love you so much. But I think you need to know about my honest thoughts in their entirety. 
+
+The thought of us being together has been the only thing on my mind, but knowing you live miles away breaks my heart. We might have spent hours on Skype and Facetime, but the truth is it can’t be compared to seeing you in person and holding you. 
+
+I can’t continue to bear this pain. We should go our separate ways. It is hard, but I believe we will be okay eventually.
+
+I wish you the best of luck in your affairs.
+
+Take care.
+
+CatBot"
+noaap: !send 535145705698885633 "Before I say anything, I must let you know our relationship has been the most important to me, and I respect and love you so much. But I think you need to know about my honest thoughts in their entirety.The thought of us being together has been the only thing on my mind, but knowing you live miles away breaks my heart. We might have spent hours on Skype and Facetime, but the truth is it can’t be compared to seeing you in person and holding you.I can’t continue to bear this pain. We should go our separate ways. It is hard, but I believe we will be okay eventually. I wish you the best of luck in your affairs.Take care.CatBot"
